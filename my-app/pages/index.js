@@ -5,6 +5,7 @@ import { Contract, providers} from "ethers";
 import { useEffect, useRef, useState } from 'react';
 import { WHITELIST_CONTRACT_ADDRESS, abi } from"../constants";
 
+
 export default function Home() {
 const [walletConnected, setWalletConnected] = useState(false);
 const [numofWhitelisted, setNumOfWhitelisted] = useState(0);
@@ -124,7 +125,8 @@ const connectWallet = async() => {
   } catch(err){
     console.error(err)
   }
-}
+};
+
 useEffect (() => {
 if (!walletConnected) {
   web3ModalRef.current = new Web3Modal({
@@ -134,6 +136,8 @@ if (!walletConnected) {
   });
   connectWallet(); 
   }
+
+  
 }, [walletConnected]);
 
   return (
