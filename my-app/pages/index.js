@@ -80,7 +80,7 @@ const getNumberOfWhitelisted = async() => {
       provider,
       );
       const _numOfWhitelisted = await whitelistContract.numAddressesWhitelisted();
-      setNumOfWhitelisted(_numOfWhitelisted)
+      setNumOfWhitelisted(_numOfWhitelisted);
 
   } catch(err) {
     console.error(err)
