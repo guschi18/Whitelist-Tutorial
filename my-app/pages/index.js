@@ -202,7 +202,7 @@ export default function Home() {
           Willkommen bei CannBen!
         </h1>
         <div className={styles.description}>
-          {numOfWhitelisted} sind der Whitelist bereits beigetreten
+          {numberOfWhitelisted} sind der Whitelist bereits beigetreten
         </div>
         {renderButton()}
         <div>
