@@ -153,7 +153,7 @@ export default function Home() {
       if (joinedWhitelist) {
         return (
           <div className={styles.description}>
-            Thanks for joining the Whitelist!
+            Danke für das joinen der Whitelist!
           </div>
         );
       } else if (loading) {
@@ -161,14 +161,14 @@ export default function Home() {
       } else {
         return (
           <button onClick={addAddressToWhitelist} className={styles.button}>
-            Join the Whitelist
+            Join der Whitelist
           </button>
         );
       }
     } else {
       return (
         <button onClick={connectWallet} className={styles.button}>
-          Connect your wallet
+          Verbinde dein Wallet
         </button>
       );
     }
